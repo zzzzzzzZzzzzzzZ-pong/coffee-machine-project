@@ -69,12 +69,12 @@ Money: ${profit}
             pennies = int(input('How many pennies: ')) * 0.01
 
             money = quaters + dimes + nickles + pennies
-            print('Getting the ingredients...')
-            time.sleep(3)
-            print('Mixing the ingredients...')
-            time.sleep(3)
-            print('Making the coffee...')
-            time.sleep(3)
+            # print('Getting the ingredients...')
+            # time.sleep(3)
+            # print('Mixing the ingredients...')
+            # time.sleep(3)
+            # print('Making the coffee...')
+            # time.sleep(3)
 
             if money >= drink["cost"]:
                 print(f'Here is your {coffee_prompt}. Enjoy! ☕')
