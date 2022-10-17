@@ -36,11 +36,11 @@ profit = 0.0
 
 def is_resources_enough(ingredients):
     for ingredient in ingredients:
+        if resources[ingredient] >= ingredients[ingredient]:
+            resources[ingredient] = resources[ingredient] - ingredients[ingredient]
         if ingredients[ingredient] >= resources[ingredient]:
             print(f"Sorry, we don't have enough {ingredient}")
             return False
-        elif resources[ingredient] <= ingredients[ingredient]:
-            resources[ingredient] = resources[ingredient] - ingredients[ingredient]
     return True
 
 while True:
