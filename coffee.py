@@ -39,7 +39,7 @@ def is_resources_enough(ingredients):
         if ingredients[ingredient] >= resources[ingredient]:
             print(f"Sorry, we don't have enough {ingredient}")
             return False
-        elif resources[ingredient] >= ingredients[ingredient]:
+        elif resources[ingredient] <= ingredients[ingredient]:
             resources[ingredient] = resources[ingredient] - ingredients[ingredient]
     return True
 
