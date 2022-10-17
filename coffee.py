@@ -40,7 +40,7 @@ def is_resources_enough(ingredients):
             print(f"Sorry, we don't have enough {ingredient}")
             return False
         if resources[ingredient] >= ingredients[ingredient]:
-            resources[ingredient] -= ingredients[ingredient]
+            resources[ingredient] = resources[ingredient] - ingredients[ingredient]
     return True
 
 while True:
@@ -79,5 +79,6 @@ Money: ${profit}
             if money >= drink["cost"]:
                 print(f'Here is your {coffee_prompt}. Enjoy! ☕')
                 profit += money
+
             else:
                 print("Sorry that's not enough money. Money refunded.")
