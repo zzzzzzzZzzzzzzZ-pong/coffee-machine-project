@@ -43,9 +43,11 @@ def is_resources_enough(ingredients):
             return False
     return True
 
+
+exit_conditions = [':q', 'quit', 'exit', 'off']
 while True:
     coffee_prompt = input('What would you like? (espresso/latte/cappuccino): ')
-    if coffee_prompt == 'off':
+    if coffee_prompt in exit_conditions:
         break
     elif coffee_prompt == 'help':
         print("""
